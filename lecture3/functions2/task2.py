@@ -2,11 +2,9 @@ from movies import movies
 
 import random
 
-def sublist():
+def output():
+    for i in range(len(movies)):
+        if movies[i]["imdb"] >= 5.5:
+            print(movies[i]["name"])
 
-    for i in movies:
-        i = random.choice(movies)
-        if i["imdb"] >= 5.5:
-            print(i["name"])
-
-sublist()
+output()
