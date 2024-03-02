@@ -1,0 +1,7 @@
+import math
+def sqrt(x,y):
+    print(f"Square root of {x} after {y} miliseconds is",x.sqrt(2))
+
+x = int(input())
+y = int(input())
+sqrt(x,y)
