@@ -1,6 +1,5 @@
-with open('file.txt', 'w') as text:
-    lst = [input() for _ in range(10 ** 6)]
-    
-    for i in lst:
-        text.write(f'{i}\n')
-        
+data = [1, 2, 3, 4, 5]
+
+with open("file2.txt", "w") as file:
+    for item in data:
+        file.write(str(item) + "\n")

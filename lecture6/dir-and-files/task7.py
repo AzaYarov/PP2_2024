@@ -1,7 +1,5 @@
-with open('file.txt') as file:
-    file_for_copy = file.read()
-    
-    file_to_copy = open('file1.txt', 'w')
-    file_to_copy.write(file_for_copy)
-    
-    file_to_copy.close()
+with open('some', 'r') as file:
+    file_contents = file.read()
+
+with open('some_copy', 'w') as file_copy:
+    file_copy.write(file_contents)
